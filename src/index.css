@@ -1,119 +1,14 @@
-/* General styles for the VideoMaker component */
-
-/* Styling for the color palette circles */
-.color-circle {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: transform 0.3s, border-color 0.3s;
-}
-
-.color-circle:hover {
-  transform: scale(1.1);
-  border-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Aspect ratio preview box */
-.preview-box {
-  position: relative;
-  border: 2px solid #ddd;
-  overflow: hidden;
-  margin-top: 1rem;
+/* Additional custom styles for video maker */
+.preview-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
 }
 
-/* Title and Content boxes in the preview */
-.title-box,
-.content-box {
-  position: absolute;
-  padding: 0.5rem 1rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.title-box {
-  top: 5%;
-  left: 5%;
-}
-
-.content-box {
-  bottom: 5%;
-  left: 5%;
-}
-
-/* Table styles */
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-.table th,
-.table td {
-  border: 1px solid #ddd;
-  padding: 0.75rem;
-  text-align: left;
-}
-
-.table th {
-  background-color: #f3f4f6;
-  font-weight: bold;
-}
-
-.table tr:nth-child(even) {
-  background-color: #f9fafb;
-}
-
-.table input {
-  width: 100%;
+.preview-title, .preview-content {
+  text-align: center;
   padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-/* Button styles */
-button {
-  padding: 0.75rem 1.5rem;
-  background-color: #3b82f6;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #2563eb;
-}
-
-button:active {
-  background-color: #1d4ed8;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .preview-box {
-    width: 100%;
-    height: auto;
-  }
-
-  .title-box,
-  .content-box {
-    font-size: 0.9rem;
-  }
-
-  button {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
 }
